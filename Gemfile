@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'faker'
 gem 'haml', '~> 4.0.7'
 
 gem 'simple_form', '~> 3.2.0'

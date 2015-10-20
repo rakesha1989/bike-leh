@@ -3,8 +3,10 @@
 	<h1>BIKE LEH</h1>
 
 	<% @posts.each do |post| %>
-	<h2><%= link_to post.title, post %></h2>
-	<p><%= time_ago_in_words(post.created_at) %></p> 
+	<h2><%= link_to post.title, post %></h2> 
+	<h3><%= time_ago_in_words(post.created_at) %></h3>
+	<p>by Hey,</p>
+	<p><%= post.user.email %></p> 
 	<% end %>
 
 	<%= link_to "New Post", new_post_path %>
