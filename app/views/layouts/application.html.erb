@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Forum1</title>
+  <title>Bike Trip Forum</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel: "stylesheet" href: "http://fonts.googleapis.com/css?family=Lato:300,400,700", type: "text/css">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+<div class="main_header">
+	<div class="clearfix">
+		<div class="wrapper">
+			<div id="logo">
+				<p>Bike Leh</p>
+			</div>
+		</div>
+			<div id="buttons">
+			<%= link_to "New post", new_post_path %>
+		</div>
+	</div>
+</header>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
 
-<%= yield %>
+<div class="wrapper">
+	
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+
+</div>
+
+<div class="wrapper">
+
+	<%= yield %>
+
+</div>	
 
 </body>
 </html>

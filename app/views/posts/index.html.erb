@@ -1,12 +1,14 @@
+	<div id="posts">		
+		<% @posts.each do |post| %>
+			<div class="post">
+				<h2><div class="title">
+				<%= link_to post.title, post %>
+				</div></h2>
+				<p><div class="date">
+				<h3>published at <%= time_ago_in_words(post.created_at) %> by <%= post.user.email %></h3>
+				</div></p>
+			</div>
+				<% end %>
+	</div>
 
-
-	<h1>BIKE LEH</h1>
-
-	<% @posts.each do |post| %>
-	<h2><%= link_to post.title, post %></h2> 
-	<h3><%= time_ago_in_words(post.created_at) %></h3>
-	<p>by Hey,</p>
-	<p><%= post.user.email %></p> 
-	<% end %>
-
-	<%= link_to "New Post", new_post_path %>
+	
