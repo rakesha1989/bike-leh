@@ -14,11 +14,16 @@
 	<div class="clearfix">
 		<div class="wrapper">
 			<div id="logo">
-				<p>Bike Leh</p>
+				<a><%= link_to "Bike Leh", root_path %></a>
 			</div>
 		</div>
 			<div id="buttons">
+			<% if user_signed_in? %>
 			<%= link_to "New post", new_post_path %>
+			<% else %>
+			<%= link_to "sign up", new_user_registration_path %>
+			<%= link_to "sign in", new_user_session_path %>
+			<% end %>
 		</div>
 	</div>
 </header>

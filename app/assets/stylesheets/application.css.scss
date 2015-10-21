@@ -16,7 +16,7 @@
 
 body {
 font-family: 'Lato', sans-serif;
-background: #EDEFF0;
+background: black;
 }
 
 .wrapper {
@@ -38,10 +38,13 @@ background: #EDEFF0;
 .main_header {
 	width: 100%;
  	margin: 0 auto;
- 	background:white;
+ 	background: #9105C2;
  	#logo {
 		float: left;
-		p {
+		padding: 20px;	
+		a {
+			text-decoration: none;
+			color: #FF6600;
 			text-transform: uppercase;
 			font-weight: 700;
 			letter-spacing: 1px;
@@ -53,7 +56,7 @@ background: #EDEFF0;
  			padding: 5px 20px;
  			a {
  				line-height: 60px;
- 				background: #397CAC;
+ 				background: #FF6600;
  				padding: 0.5em 1em;
  				border-radius: 0.2em;
  				color: white;
@@ -64,17 +67,17 @@ background: #EDEFF0;
  }
 
 #posts {
-	background: white;
-	padding: 3em 10%;
+	background: skyblue;
+	padding: 1em 2em 2em 4em;
 	border-radius: 0.5em;
 	.post {
 		margin: 1em 0;
 		padding: 1em 0;
-		border-bottom: 1px solid #D1d1d1;
+		border-bottom: 1px solid #FF6600;
 		.title {
 			margin: 0;
 			a {
-				color: #397CAC;
+				color: #9105C2;
 				text-decoration: none;
 				font-weight: 100;
 				font-size: 1.25rem;
@@ -83,13 +86,13 @@ background: #EDEFF0;
 		.date {
 			margin-top: .25rem;
 			font-size: 0.9rem;
-			color: #B2BAC2;
+			color: black;
 		}
 	}
 }
 
 #post_content {
-	background: purple;
+	background: skyblue;
 	padding: 2em 5%;
 	border-radius: 0.5em;
 	h1 {
@@ -99,7 +102,7 @@ background: #EDEFF0;
 		margin-top: 0;
 	}
 	p {
-		color: #B2BAC2;
+		color: black;
 		font-size: 0.9rem;
 		font-weight: 100;
 		line-height: 1.5;
