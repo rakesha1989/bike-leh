@@ -1,6 +1,7 @@
 	<div id="posts">		
 		<% @posts.each do |post| %>
 			<div class="post">
+				<%= image_tag post.image.url(:thumb) %>
 				<h2><div class="title">
 				<%= link_to post.title, post %>
 				</div></h2>

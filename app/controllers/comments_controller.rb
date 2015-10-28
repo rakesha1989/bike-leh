@@ -13,6 +13,11 @@ class CommentsController < ApplicationController
 		end
 end
 
+def show
+		@post = Post.find(params[:post_id])
+		@comment = @post.comments.find(params[:id])
+end
+
 	def edit
 		@post = Post.find(params[:post_id])
 		@comment = @post.comments.find(params[:id])

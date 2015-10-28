@@ -1,3 +1,7 @@
+<div id="image">
+	<%= image_tag @post.image.url(:large) %>
+</div>
+
 <div id="post_content">	
 
 		<h1><%= @post.title %></h1>
@@ -11,6 +15,8 @@
 				<h3> Reply to thread
 				<%= render "comments/form" %></h3>
 		</div>
+
+		
 
 <%= link_to "EDIT", edit_post_path(@post) %>
 <%= link_to "DELETE", post_path(@post), method: :delete, data: {confirm: "Are you sure want to delete"} %>
